@@ -16,7 +16,7 @@ KEENOS_VER=$(ndmc -c "show version" | grep -oE 'title: [0-9.]+' | cut -d' ' -f2)
 OPKGTUN_INTERFACE="opkgtun0"
 
 # Размер MTU, применяемый к интерфейсу OpkgTun
-OPKGTUN_MTU="1376"
+OPKGTUN_MTU="1500"
 
 # Файл конфигурации AWG
 AWG_CONF="/opt/etc/amnezia/amneziawg/awg0-opkgtun0.conf"
